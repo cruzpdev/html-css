@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body{
+            height: 100vh; /*importante para ajustar o BACKGROUND-SIZE. 100% da tela do usuario (view height)*/
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover; 
+            /*contain: mostra 100% do tamanho da imagem. Se a tela  for maior, a imagem não se adaptará.
+              auto: centraliza a imagem. se a tela for maior, a imagem não se adaptará 
+              cover: dá um leve zoom na imagem e se adapta á 100% de qualquer tela.*/
+            background-attachment: fixed;
+
+            /*shorthand - background
+                color > image > position > repeat > [size] > attachment */
+        }
+
+        main{
+            background-color: white;
+            max-width: 400px; /*Dê preferencia à max-width do que width por conta do tamanho de tela de celulares.*/
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus cumque itaque tempora laborum veritatis omnis. Incidunt vel corporis dolores autem laudantium ullam atque ipsum obcaecati sunt consectetur, nesciunt dignissimos suscipit?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non quidem officiis cumque eius sit animi modi possimus magnam suscipit quaerat nesciunt dolorum, sunt, itaque repudiandae et laborum! Harum, quaerat suscipit!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nam deserunt, id libero repudiandae consectetur animi sequi quam illum, hic totam cum! Illo est eos quis eius quos atque! Consequuntur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quo ullam laboriosam, magnam alias neque at, nostrum eaque consequatur corrupti dolores voluptates quaerat doloribus non ad atque mollitia porro necessitatibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum architecto esse nulla aliquam non officiis odio quo soluta ipsam est laudantium alias repellat, dignissimos animi? Placeat magnam iste consequuntur tenetur!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus dolorum accusantium reiciendis autem incidunt explicabo accusamus ipsam, iure dolor provident harum sint perspiciatis quaerat aliquid atque repellat doloremque! Maiores, numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illo aliquam impedit, deserunt nemo vero reiciendis, quis voluptate iusto nisi sint saepe? Aliquid repellendus cumque quidem, dolorum accusantium minima dolor.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt corrupti eaque, numquam facere similique nobis quod laborum! Voluptatum enim harum assumenda ipsa illum a earum sunt facere aut quo!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eligendi at dicta quo saepe delectus est tenetur dolor vitae, vero in officiis possimus impedit rerum officia aut vel! Sunt, cupiditate.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni deserunt nemo quo, porro sit totam quaerat cumque officiis facere natus optio illum excepturi omnis alias exercitationem quam a fuga expedita.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem enim blanditiis aut odio fugiat dolorum quia pariatur, quis deserunt, aliquam modi aspernatur aperiam molestiae a ea quo laudantium vel ducimus!
+        </p>
+    </main>
+    
+</body>
+</html>
