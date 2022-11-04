@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -21,14 +22,26 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(81, 81, 81);
             color: aliceblue;
+        }
+
+        thead> tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(81, 81, 81);
+        }
+
+        tbody > tr:nth-child(2n){     /*Seleciona um a cada 2 elementos
+   de qualquer grupo de elementos irmãos,
+   começando do segundo elemento*/
+            background-color: lightgrey;
         }
 
         td.n{
             text-align: right;
         }
-        
+       
     </style>
 </head>
 <body>
@@ -46,8 +59,8 @@
         <thead>
             <tr>
                 <th>Estado</th>
-                <th>População (2021)</th>
-                <th> % da pop. total</th>
+                <th style="width:30px">População (2021)</th>
+                <th style="width: 10px;"> % da pop. total</th>
             </tr>
         </thead>
         <tbody>
@@ -188,7 +201,7 @@
             </tr>
         </tbody>
         <tfoot>
-            <tr id="rodape">
+            <tr>
                 <th>Total de Habitantes:</th>
                 <td></td>
                 <td class="n"><strong>214 milhões</strong></td>
