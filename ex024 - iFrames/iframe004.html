@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi explicabo officia reiciendis? Recusandae deserunt obcaecati, officiis veniam similique porro vel unde id corrupti atque repellat non quis, libero asperiores debitis!</p>
+
+    <!--O atributo sandbox aplica restrições ao conteúdo do iframe, para maior segurança. O atributo referrerpolicy='no referrer' impede a captura de dados do cliente pelo site dentro do iframe. utilize sempre os dois caso for usar iframes-->
+
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        <p>Seu navegador não é compatível para essa exibição.</p>
+    
+        <!--o atributo referrerpolicy='no referrer' impede a captura de dados do site dentro do iframe-->
+    </iframe>
+
+    <p>Amet, impedit dolore neque, eveniet quis, totam sapiente odio asperiores reprehenderit fuga accusamus. Ratione quas aliquid rem ex iusto ullam quo, ab sit. Officiis corrupti fugiat animi excepturi, natus vero.</p>
+    
+</body>
+</html>
